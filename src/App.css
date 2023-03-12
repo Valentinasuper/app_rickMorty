@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(27, 23, 23)
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.header img {
+  width: 100%;
+  
+}
+.input {
+  width: 80%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.input input {
+  height: 25px;
+  font-size: 16px;
+  width: 350px;
+  background-color: #090909;
+  color: #e5d7d7;
+  font-family: 'Gloria Hallelujah', sans-serif;
+  padding-left: 50px;
+  border: solid #edba05;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.input button{
+  margin-left: 20px;
+  height: 40px;
+  width: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #c8dfeb;
+  background-color: #000001;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 16px;
+  border: solid #dcdc26 2px;
+  cursor: pointer;
+  
+}
+.location {
+  background-color: #12011deb;
+  color: #1b030100;
+  border: solid #bbb8d3;
+  border-radius: 10px;
+  width: 80%;
+  -webkit-text-stroke: 0.5px #fcfcfc;
+  color: #281d0a;
+  margin-bottom: 20px;
+  margin-top: -70px;
+  font-family: 'Gloria Hallelujah', sans-serif;
+}
+.location h2{
+  margin-left: 0px;
+  justify-content: center;
+  font-size: 36px;
+  margin-top: 10px;
+}
+.list {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.list li {
+  margin-right: 20px;
+  margin-left: 20px;
+  list-style: none;
+}
+.containerdiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  transition: all 0.25s;
+}
+.card1 {
+  background-color: #24043ab6;
+  border: solid #26281b;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 0px;
+  font-family: 'Gloria Hallelujah', sans-serif;
+  max-width: 25%;
+  min-width: 300px;
+  transition: all 0.25s;
+}
+.card1 img {
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+.card1 h2 {
+  text-align: end;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #bbb8d3;
+}
+.card1 p {
+  text-align: start;
+  margin-left: 0px !important;
+  margin: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.status {
+  background-color: #b5d211;
+  margin-right: 85px ;
+  border-radius: 0px 10px 10px 0px;
+}
+.pointer {
+  background-color: rgb(102, 62, 62);
+  border: solid 0.5px #10b11b;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  margin-bottom: -35px;
+  margin-left: 150px;
+  position: relative;
+}
+.footer {
+  width: 100%;
+  height: 150px;
+  background-color: #121010;
+  color: #e0cfcf;
+  align-content: center;
+  display: grid;
+  margin-top: 30px;
+}
+.footer h3 {
+  font-size: 36px;
+}
+.footer p {
+  font-size: 22px;
+}
+
+/* Spinner */
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 660px) {
+  .location h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .location li {
+    font-size: 16px;
+    margin-right: 15px;
+    margin-left: 15px;
+    flex-wrap: wrap;
+  }
+  .list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .location {
+    margin-top: -50px;
+  }
+  .input {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .input input {
+    height: 30px;
+    font-size: 12px;
+    width: 260px;
+    padding-left: 20px;
+  }
+  .input button{
+    margin-left: 20px;
+    height: 40px;
+    width: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+  .containerdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+  }
+  .card1 {
+    max-width: 90%;
+    margin: 10px;
+  }
+  .footer h3 {
+    font-size: 24px;
+  }
+  .footer p {
+    font-size: 16px;
+  }
+}
